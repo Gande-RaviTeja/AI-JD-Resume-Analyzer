@@ -8,7 +8,7 @@ A professional AI assistant for Telegram designed to streamline HR recruiting, c
 
 *  **Telegram Bot**: [@rt_resume_bot](https://t.me/rt_resume_bot)
 *  **Render Web Service**: [ai-jd-resume-analyzer.onrender.com](https://ai-jd-resume-analyzer.onrender.com)
-* **use the server to start the bot**   
+                     **use the server to start the bot**   
 
 ---
 
