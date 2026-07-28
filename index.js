@@ -20,6 +20,16 @@ bot.catch((err, ctx) => {
   ctx.replyWithMarkdown('**An unexpected error occurred while processing your request.**').catch(() => {});
 });
 
+// HTTP Health Check server for Render Web Service deployment
+const http = require('http');
+const PORT = process.env.PORT || 3000;
+http.createServer((req, res) => {
+  res.writeHead(200, { 'Content-Type': 'text/plain' });
+  res.end('Telegram HR Bot is live and running!\n');
+}).listen(PORT, () => {
+  console.log(`Health check server listening on port ${PORT}`);
+});
+
 // Launch bot
 bot.launch().then(() => {
   console.log('Telegram HR Resume Screening Bot started successfully.');
